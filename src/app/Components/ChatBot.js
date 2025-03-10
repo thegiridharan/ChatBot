@@ -17,7 +17,7 @@ export default function ChatBot() {
         setLoading(true);
 
         try {
-            const response = await axios.post("/api/chat", { message: input });
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/chat`, { message: input });
 
             setMessages((prevMessages) => [
                 ...prevMessages,
