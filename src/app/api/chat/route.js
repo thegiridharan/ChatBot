@@ -25,7 +25,7 @@ export async function POST(req) {
             },
             {
                 headers: {
-                    Authorization: `Bearer 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`,
+                    Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
                     "Content-Type": "application/json",
                 },
             }
